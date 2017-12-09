@@ -1,0 +1,593 @@
+2017-01-19 17:15:33 [scrapy.utils.log] INFO: Scrapy 1.3.0 started (bot: ecommerce)
+2017-01-19 17:15:33 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'ecommerce.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['ecommerce.spiders'], 'LOG_FILE': 'logs/ecommerce/daraz/956de540de3811e6ae4f60030899fa56.log', 'BOT_NAME': 'ecommerce'}
+2017-01-19 17:15:33 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-01-19 17:15:33 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['ecommerce.urlseen_middleware.URLSeenMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-01-19 17:15:33 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-01-19 17:15:34 [scrapy.middleware] INFO: Enabled item pipelines:
+['ecommerce.mongo_pipeline.MongoPipeline']
+2017-01-19 17:15:34 [scrapy.core.engine] INFO: Spider opened
+2017-01-19 17:15:34 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-01-19 17:15:34 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2017-01-19 17:15:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/robots.txt> (referer: None)
+2017-01-19 17:15:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/> (referer: None)
+2017-01-19 17:15:37 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.daraz.com.bd/womens-purses-wallets/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2017-01-19 17:15:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/mens-clothing/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/mens-shoes/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/mens-flip-flops-sandals/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/mens-ties-cuffins/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/mens-wallets-card-holders/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/mens-accessories/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:39 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.daraz.com.bd/mens-chronograph-watches/> from <GET https://www.daraz.com.bd/fashion-by-daraz-men-accessoires-watches-chronograph/>
+2017-01-19 17:15:39 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.daraz.com.bd/mens-analog-watches/> from <GET https://www.daraz.com.bd/fashion-by-daraz-men-accessoires-watches-analog-watches/>
+2017-01-19 17:15:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/mens-sunglasses/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/mens-office-bags/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/mens-belts/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/smart-watches/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/mens-watches/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/mens-fatua-kurta/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/mens-traditional-clothing/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/mens-panjabi-sherwani/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/grocers-shop/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/books-stationery-foreign-language-books/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/books-stationery-home-country-languagebooks/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/booksstationery/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/others/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/mens-analog-watches/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/mens-chronograph-watches/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.daraz.com.bd/womens-fashion/> from <GET https://www.daraz.com.bd/fashion-by-daraz-women/>
+2017-01-19 17:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/automotive-motorcycles/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/automotive--motorcycles-car-accessories/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:41 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.daraz.com.bd/mens-fashion/> from <GET https://www.daraz.com.bd/fashion-by-daraz-men/>
+2017-01-19 17:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/automotive--motorcycles-motorcycles/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/automotive--motorcycles-other-automotives--motorcycles/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/fashion-by-daraz/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/fashion-by-daraz-kids/?price=0-999> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/fashion-by-daraz-kids-babies/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/fashion-by-daraz-kids/?facet_is_mpg_child=0&viewType=gridView3&sort=newest&dir=desc> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/fashion-by-daraz-kids-girls/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/kids-and-baby-kids-tricycles-cars/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/fashion-by-daraz-kids-boys/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/kids-and-baby-kids-educative/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/kids-babies-kids/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/fashion-by-daraz-kids/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/kids-babies-kids-dolls-accessories/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/mens-fashion/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/kids-babies-kids-cars-remote-control-toys/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/womens-fashion/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/kids-and-baby-baby-baby-toys/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/kids-babies-kids-other-toys/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/baby-toys-kids-toys-games/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/kids-babies-baby-baby-care/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/kids-babies-baby/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-health/?sort=sale&dir=desc> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-health/?price=0-999> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-hair-care/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-health/?viewType=gridView3&sort=newest&dir=desc> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-hair-care-hair-products/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-hair-care-hair-tools/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/kids-and-baby-baby-baby-feeding/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-for-men-hair/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/trimmers-for-men/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-for-men-skin-care/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-for-men/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/shavers-for-men/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-bath-and-body-bath-and-shower/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-personal-care-condoms/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-bath-and-body-lotions-and-creams/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-hand-feet-nail-care/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-personal-care/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-makeup-beauty-tools-accessories/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-makeup-lips/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-bath-and-body/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-makeup-face/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-makeup-eye/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-fragrances-for-women/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-fragrances/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-fragrances-for-men/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beauty-and-perfumes-makeup/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:46 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.daraz.com.bd/sport-fitness/> from <GET https://www.daraz.com.bd/https:/www.daraz.com.bd/sport-fitness/?price=0-999>
+2017-01-19 17:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness/top-sellers/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sports-fitness-sports-bag/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness/?viewType=gridView&sort=newest&dir=desc> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness-women-sport-shoes/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness-sportswear-mens-sportswear/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness-sportswear-womens-sportswear/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness-sportswear-mens-sportswear-jerseys/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness-men-sport-shoes/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness-sportswear/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/other-equipment/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/exercise-cycles/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness/gnc/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.daraz.com.bd/sports-fitness/> from <GET https://www.daraz.com.bd/sport-fitness/>
+2017-01-19 17:15:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/treadmills/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/boxing/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness-sport-badminton/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness-sport-water-sports/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/fitness-machines/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness-sport-tennis/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness-sport-basketball/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness-sport-cricket/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness-sport-cycling/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness-sport-football/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness-sport/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/gym-balls/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/yoga-mats/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/dumbbells/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living/top-sellers/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sports-fitness/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness-fitness-small-fitness-equipments/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living/?viewType=gridView&sort=newest&dir=desc> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness-fitness-proteins/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-office-outdoor-garden-mechanical-parts-pumps-parts/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sport-fitness-fitness/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-kitchen-dining-cookware/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-kitchen-dining-tableware/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-kitchen-dining-bakeware/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-outdoor-garden/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-furniture-living-room-furniture-chairs-bean-bag-chairs/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-home-fixtures-repairs/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/books-stationery-stationery/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-home-dacor-clocks/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-furniture-living-room-furniture-sofas-sectionals/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-kitchen-dining/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-furniture-office-furniture-office-chairs/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-home-dacor-other-home-decoration/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-home-dacor-curtains-blinds-shades/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-home-dacor-decorative-cushion-inserts-covers/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-home-decor/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-bedding-blankets-duvets/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-bedding-pillows/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-bedding-bed-linen-bedsheets/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-lighting-decorative-lamps/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-lighting-decorative-wall-ceiling-lights-ceiling-lights/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-bedding/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/appliances/walton/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-lighting-lighting-bulbs-components/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/appliances/lg/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/home-living-lighting/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/appliances/siemens/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/appliances/carrier/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/appliances/general/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/appliances/philips/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/appliances/top-sellers/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/appliances/shimizu/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/appliances/chigo/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/appliances/?viewType=gridView&sort=newest&dir=desc> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/dishwashers/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/automatic-washers/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/freezers/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/appliances/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/cooktops/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/exhausts-rangehoods/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/refrigerators/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/microwaves/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/large-ovens/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/cooking-appliances/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/water-dispensers/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/appliances-generators-power-suppliers-other-power-accessories/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.daraz.com.bd/generators-power-suppliers/> from <GET https://www.daraz.com.bd/appliances-generators-power-suppliers/>
+2017-01-19 17:15:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/chigo-1.5-ton-1900w-18000btu-split-air-conditioner-white-66107.html> (referer: https://www.daraz.com.bd/appliances/chigo/)
+2017-01-19 17:15:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/free-hit-instant-hot-water-bathroom-shower-103138.html> (referer: https://www.daraz.com.bd/appliances/?viewType=gridView&sort=newest&dir=desc)
+2017-01-19 17:15:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/shamima-arin-ceramics-electrical-kettle-103062.html> (referer: https://www.daraz.com.bd/appliances/?viewType=gridView&sort=newest&dir=desc)
+2017-01-19 17:15:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/shamima-arin-multi-function-meat-grinder-103057.html> (referer: https://www.daraz.com.bd/appliances/?viewType=gridView&sort=newest&dir=desc)
+2017-01-19 17:15:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/general-1-ton-asga-12bmta-wall-mounted-split-air-conditioner-white-53073.html> (referer: https://www.daraz.com.bd/appliances/general/)
+2017-01-19 17:15:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/general-1-ton-asga12bmta-split-air-conditioner-white-52347.html> (referer: https://www.daraz.com.bd/appliances/general/)
+2017-01-19 17:15:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/free-hit-kangertech-ssocc-replacement-coil-1pcs-103140.html> (referer: https://www.daraz.com.bd/appliances/?viewType=gridView&sort=newest&dir=desc)
+2017-01-19 17:15:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/chigo-1.5-ton-1900w-18000btu-split-air-conditioner-white-66107.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/chigo-4566-70166-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/chigo-4566-70166-2-zoom.jpg',
+            u'https://static.daraz.com.bd/p/chigo-4566-70166-3-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 55, 814083),
+ 'price': u'45600',
+ 'title': u'Chigo 1.5 Ton 1900W 18000BTU Split Air Conditioner - White',
+ 'url': 'https://www.daraz.com.bd/chigo-1.5-ton-1900w-18000btu-split-air-conditioner-white-66107.html'}
+2017-01-19 17:15:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/kadeka-kcf-230-deep-freezers-white-turquoise-30824.html> (referer: https://www.daraz.com.bd/freezers/)
+2017-01-19 17:15:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/free-hit-instant-hot-water-bathroom-shower-103138.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/free-hit-rms-2012-831301-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 55, 853228),
+ 'price': u'2400',
+ 'title': u'Free Hit Instant Hot Water Bathroom Shower',
+ 'url': 'https://www.daraz.com.bd/free-hit-instant-hot-water-bathroom-shower-103138.html'}
+2017-01-19 17:15:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/shamima-arin-ceramics-electrical-kettle-103062.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/shamima-arin-kaymu-3282-260301-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 55, 876547),
+ 'price': u'2350',
+ 'title': u'Shamima Arin Ceramics Electrical Kettle',
+ 'url': 'https://www.daraz.com.bd/shamima-arin-ceramics-electrical-kettle-103062.html'}
+2017-01-19 17:15:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/shamima-arin-multi-function-meat-grinder-103057.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/shamima-arin-kaymu-3274-750301-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 55, 898176),
+ 'price': u'1750',
+ 'title': u'Shamima Arin Multi-function Meat Grinder',
+ 'url': 'https://www.daraz.com.bd/shamima-arin-multi-function-meat-grinder-103057.html'}
+2017-01-19 17:15:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/general-1-ton-asga-12bmta-wall-mounted-split-air-conditioner-white-53073.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/general-3600-37035-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/general-3600-37035-2-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 55, 929360),
+ 'price': u'44000',
+ 'title': u'General 1 Ton ASGA-12BMTA Wall Mounted Split Air Conditioner - White',
+ 'url': 'https://www.daraz.com.bd/general-1-ton-asga-12bmta-wall-mounted-split-air-conditioner-white-53073.html'}
+2017-01-19 17:15:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/general-1-ton-asga12bmta-split-air-conditioner-white-52347.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/general-3600-74325-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 55, 944690),
+ 'price': u'46600',
+ 'title': u'General 1 Ton ASGA12BMTA Split Air Conditioner - White',
+ 'url': 'https://www.daraz.com.bd/general-1-ton-asga12bmta-split-air-conditioner-white-52347.html'}
+2017-01-19 17:15:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/free-hit-kangertech-ssocc-replacement-coil-1pcs-103140.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/free-hit-rms-2014-041301-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 55, 957015),
+ 'price': u'355',
+ 'title': u'Free Hit Kangertech SSOCC Replacement Coil (1pcs)',
+ 'url': 'https://www.daraz.com.bd/free-hit-kangertech-ssocc-replacement-coil-1pcs-103140.html'}
+2017-01-19 17:15:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/kadeka-kcf-230-deep-freezers-white-turquoise-30824.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/kadeka-9126-42803-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 55, 980985),
+ 'price': u'35000',
+ 'title': u'KADEKA KCF-230 Deep Freezers - White & turquoise',
+ 'url': 'https://www.daraz.com.bd/kadeka-kcf-230-deep-freezers-white-turquoise-30824.html'}
+2017-01-19 17:15:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/kadeka-kcf-180-chest-freezer-180l-white-32520.html> (referer: https://www.daraz.com.bd/freezers/)
+2017-01-19 17:15:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/kadeka-kcf-260-chest-freezer-260l-white-68627.html> (referer: https://www.daraz.com.bd/freezers/)
+2017-01-19 17:15:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/linnex-trf-305-t-bottom-mount-refrigerator-grey-59563.html> (referer: https://www.daraz.com.bd/refrigerators/)
+2017-01-19 17:15:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/linnex-trf-241ts-bottom-mount-refrigerator-grey-59567.html> (referer: https://www.daraz.com.bd/refrigerators/)
+2017-01-19 17:15:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/linnex-trf-315t-bottom-mount-refrigerator-white-59564.html> (referer: https://www.daraz.com.bd/refrigerators/)
+2017-01-19 17:15:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/kadeka-kcf-180-chest-freezer-180l-white-32520.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/kadeka-3597-02523-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 56, 659349),
+ 'price': u'25900',
+ 'title': u'KADEKA KCF-180 Chest Freezer 180L - White',
+ 'url': 'https://www.daraz.com.bd/kadeka-kcf-180-chest-freezer-180l-white-32520.html'}
+2017-01-19 17:15:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/kadeka-kcf-260-chest-freezer-260l-white-68627.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/kadeka-5043-72686-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 56, 706004),
+ 'price': u'38000',
+ 'title': u'KADEKA KCF-260 Chest Freezer 260L White',
+ 'url': 'https://www.daraz.com.bd/kadeka-kcf-260-chest-freezer-260l-white-68627.html'}
+2017-01-19 17:15:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/linnex-trf-305-t-bottom-mount-refrigerator-grey-59563.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/linnex-0550-36595-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/linnex-0550-36595-2-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 56, 735470),
+ 'price': u'69000',
+ 'title': u'Linnex TRF-305 T Bottom Mount Refrigerator \u2013 Grey',
+ 'url': 'https://www.daraz.com.bd/linnex-trf-305-t-bottom-mount-refrigerator-grey-59563.html'}
+2017-01-19 17:15:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/linnex-trf-210a-top-mount-refrigerator-white-59566.html> (referer: https://www.daraz.com.bd/refrigerators/)
+2017-01-19 17:15:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/linnex-bcd-420-wb-french-door-refrigerator-white-59565.html> (referer: https://www.daraz.com.bd/refrigerators/)
+2017-01-19 17:15:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/linnex-trf-241ts-bottom-mount-refrigerator-grey-59567.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/linnex-0557-76595-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/linnex-0557-76595-2-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 56, 802588),
+ 'price': u'40500',
+ 'title': u'Linnex TRF-241TS Bottom Mount Refrigerator \u2013 Grey',
+ 'url': 'https://www.daraz.com.bd/linnex-trf-241ts-bottom-mount-refrigerator-grey-59567.html'}
+2017-01-19 17:15:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/linnex-trf-315t-bottom-mount-refrigerator-white-59564.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/linnex-0550-46595-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/linnex-0550-46595-2-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 56, 820914),
+ 'price': u'49000',
+ 'title': u'Linnex TRF-315T Bottom Mount Refrigerator - White',
+ 'url': 'https://www.daraz.com.bd/linnex-trf-315t-bottom-mount-refrigerator-white-59564.html'}
+2017-01-19 17:15:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/linnex-trf-210a-top-mount-refrigerator-white-59566.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/linnex-0552-66595-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/linnex-0552-66595-2-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 56, 883875),
+ 'price': u'29000',
+ 'title': u'Linnex TRF-210A Top Mount Refrigerator \u2013 White',
+ 'url': 'https://www.daraz.com.bd/linnex-trf-210a-top-mount-refrigerator-white-59566.html'}
+2017-01-19 17:15:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/linnex-bcd-420-wb-french-door-refrigerator-white-59565.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/linnex-9639-56595-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/linnex-0551-56595-2-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 56, 908605),
+ 'price': u'105000',
+ 'title': u'Linnex BCD-420 WB French Door Refrigerator - White',
+ 'url': 'https://www.daraz.com.bd/linnex-bcd-420-wb-french-door-refrigerator-white-59565.html'}
+2017-01-19 17:15:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/generators-power-suppliers/> (referer: https://www.daraz.com.bd/)
+2017-01-19 17:15:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sharp-r-22ao-stv-microwave-oven-20l-ash-71588.html> (referer: https://www.daraz.com.bd/microwaves/)
+2017-01-19 17:15:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/sharp-r-22ao-stv-microwave-oven-20l-ash-71588.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/sharp-9409-88517-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 57, 203440),
+ 'price': u'11300',
+ 'title': u'Sharp R-22AO (ST)V Microwave Oven 20L \u2013 Ash',
+ 'url': 'https://www.daraz.com.bd/sharp-r-22ao-stv-microwave-oven-20l-ash-71588.html'}
+2017-01-19 17:15:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/panasonic-st651m-microwave-32l-silver-72157.html> (referer: https://www.daraz.com.bd/microwaves/)
+2017-01-19 17:15:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/panasonic-nn-sm322m-microwave-oven-25l-silver-72026.html> (referer: https://www.daraz.com.bd/microwaves/)
+2017-01-19 17:15:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/panasonic-nncf770m-convection-microwave-oven-27l-silver-72162.html> (referer: https://www.daraz.com.bd/microwaves/)
+2017-01-19 17:15:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/panasonic-df383b-microwave-23l-black-72163.html> (referer: https://www.daraz.com.bd/microwaves/)
+2017-01-19 17:15:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/panasonic-st651m-microwave-32l-silver-72157.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/panasonic-1173-75127-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 57, 460149),
+ 'price': u'19300',
+ 'title': u'Panasonic ST651M Microwave 32L - Silver',
+ 'url': 'https://www.daraz.com.bd/panasonic-st651m-microwave-32l-silver-72157.html'}
+2017-01-19 17:15:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/panasonic-nn-sm322m-microwave-oven-25l-silver-72026.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/panasonic-4463-62027-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 57, 477101),
+ 'price': u'9300',
+ 'title': u'Panasonic NN-SM322M Microwave Oven 25L - Silver',
+ 'url': 'https://www.daraz.com.bd/panasonic-nn-sm322m-microwave-oven-25l-silver-72026.html'}
+2017-01-19 17:15:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/panasonic-nncf770m-convection-microwave-oven-27l-silver-72162.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/panasonic-2482-26127-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/panasonic-2482-26127-2-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 57, 493274),
+ 'price': u'36000',
+ 'title': u'Panasonic NNCF770M Convection Microwave Oven 27L - Silver',
+ 'url': 'https://www.daraz.com.bd/panasonic-nncf770m-convection-microwave-oven-27l-silver-72162.html'}
+2017-01-19 17:15:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/panasonic-df383b-microwave-23l-black-72163.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/panasonic-2789-36127-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/panasonic-2789-36127-2-zoom.jpg',
+            u'https://static.daraz.com.bd/p/panasonic-2789-36127-3-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 57, 510318),
+ 'price': u'24700',
+ 'title': u'Panasonic DF383B Microwave 23L - Black',
+ 'url': 'https://www.daraz.com.bd/panasonic-df383b-microwave-23l-black-72163.html'}
+2017-01-19 17:15:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sharp-r-75mr-microwave-oven-25l-silver-73697.html> (referer: https://www.daraz.com.bd/microwaves/)
+2017-01-19 17:15:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/sharp-r-75mr-microwave-oven-25l-silver-73697.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/sharp-5551-79637-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 57, 744464),
+ 'price': u'12800',
+ 'title': u'Sharp R-75MR Microwave Oven 25L \u2013 Silver',
+ 'url': 'https://www.daraz.com.bd/sharp-r-75mr-microwave-oven-25l-silver-73697.html'}
+2017-01-19 17:15:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/singer-smw30gcb6-convection-microwave-oven-30l-silver-69733.html> (referer: https://www.daraz.com.bd/microwaves/)
+2017-01-19 17:15:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/panasonic-nn-ct655myte-microwave-oven-27l-black-73872.html> (referer: https://www.daraz.com.bd/microwaves/)
+2017-01-19 17:15:57 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2017-01-19 17:15:57 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2017-01-19 17:15:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/singer-smw30gcb6-convection-microwave-oven-30l-silver-69733.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/singer-5427-33796-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/singer-5427-33796-2-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 57, 885417),
+ 'price': u'14000',
+ 'title': u'Singer SMW30GCB6 Convection Microwave Oven 30L \u2013 Silver',
+ 'url': 'https://www.daraz.com.bd/singer-smw30gcb6-convection-microwave-oven-30l-silver-69733.html'}
+2017-01-19 17:15:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/panasonic-nn-ct655myte-microwave-oven-27l-black-73872.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/panasonic-5915-27837-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 57, 933790),
+ 'price': u'23300',
+ 'title': u'Panasonic NN-CT655MYTE Microwave Oven 27L - Black',
+ 'url': 'https://www.daraz.com.bd/panasonic-nn-ct655myte-microwave-oven-27l-black-73872.html'}
+2017-01-19 17:15:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/linnex-trf-167-bottom-mount-refrigerator-grey-59570.html> (referer: https://www.daraz.com.bd/refrigerators/)
+2017-01-19 17:15:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/linnex-trf-183-bottom-mount-refrigerator-red-59571.html> (referer: https://www.daraz.com.bd/refrigerators/)
+2017-01-19 17:15:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/linnex-trf-118t-top-mount-refrigerator-white-59569.html> (referer: https://www.daraz.com.bd/refrigerators/)
+2017-01-19 17:15:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/linnex-trf-167-bottom-mount-refrigerator-grey-59570.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/linnex-0560-07595-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/linnex-0560-07595-2-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 58, 168337),
+ 'price': u'26500',
+ 'title': u'Linnex TRF-167 Bottom Mount Refrigerator \u2013 Grey',
+ 'url': 'https://www.daraz.com.bd/linnex-trf-167-bottom-mount-refrigerator-grey-59570.html'}
+2017-01-19 17:15:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/linnex-trf-183-bottom-mount-refrigerator-red-59571.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/linnex-0562-17595-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/linnex-0562-17595-2-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 58, 183631),
+ 'price': u'28000',
+ 'title': u'Linnex TRF-183 Bottom Mount Refrigerator \u2013 Red',
+ 'url': 'https://www.daraz.com.bd/linnex-trf-183-bottom-mount-refrigerator-red-59571.html'}
+2017-01-19 17:15:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/linnex-trf-118t-top-mount-refrigerator-white-59569.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/linnex-0559-96595-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/linnex-0559-96595-2-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 58, 196956),
+ 'price': u'20900',
+ 'title': u'Linnex TRF-118T Top Mount Refrigerator - White',
+ 'url': 'https://www.daraz.com.bd/linnex-trf-118t-top-mount-refrigerator-white-59569.html'}
+2017-01-19 17:15:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/panasonic-gf574m-microwave-27l-white-72155.html> (referer: https://www.daraz.com.bd/microwaves/)
+2017-01-19 17:15:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/panasonic-gf574m-microwave-27l-white-72155.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/panasonic-0395-55127-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 58, 391833),
+ 'price': u'21500',
+ 'title': u'Panasonic GF574M Microwave 27L - White',
+ 'url': 'https://www.daraz.com.bd/panasonic-gf574m-microwave-27l-white-72155.html'}
+2017-01-19 17:15:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/kelvinator-abc-199g-top-mount-refrigerator-199l-red-53144.html> (referer: https://www.daraz.com.bd/refrigerators/)
+2017-01-19 17:15:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/kelvinator-abc-199g-top-mount-refrigerator-199l-red-53144.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/kelvinator-plus-3600-44135-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/kelvinator-plus-3600-44135-2-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 58, 528346),
+ 'price': u'33650',
+ 'title': u'KELVINATOR ABC-199G Top Mount Refrigerator 199L - Red',
+ 'url': 'https://www.daraz.com.bd/kelvinator-abc-199g-top-mount-refrigerator-199l-red-53144.html'}
+2017-01-19 17:15:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sharp-sj-sk26e-ss-top-mount-refrigerator-216l-grey-85639.html> (referer: https://www.daraz.com.bd/refrigerators/)
+2017-01-19 17:15:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sharp-sj-pd39p-bk-top-mount-refrigerator-black-100343.html> (referer: https://www.daraz.com.bd/refrigerators/)
+2017-01-19 17:15:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/sharp-sj-sk26e-ss-top-mount-refrigerator-216l-grey-85639.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/sharp-9799-93658-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 58, 740580),
+ 'price': u'51000',
+ 'title': u'Sharp SJ-SK26E-SS Top Mount Refrigerator 216L \u2013 Grey',
+ 'url': 'https://www.daraz.com.bd/sharp-sj-sk26e-ss-top-mount-refrigerator-216l-grey-85639.html'}
+2017-01-19 17:15:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/digital-x-1200va-supreme-ups-black-47918.html> (referer: https://www.daraz.com.bd/generators-power-suppliers/)
+2017-01-19 17:15:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/beacon-power-pac-650va-standby-ups-system-grey-52403.html> (referer: https://www.daraz.com.bd/generators-power-suppliers/)
+2017-01-19 17:15:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/sharp-sj-pd39p-bk-top-mount-refrigerator-black-100343.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/sharp-9411-343001-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 58, 852913),
+ 'price': u'87450',
+ 'title': u'Sharp SJ-PD39P-BK Top Mount Refrigerator - Black',
+ 'url': 'https://www.daraz.com.bd/sharp-sj-pd39p-bk-top-mount-refrigerator-black-100343.html'}
+2017-01-19 17:15:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/linnex-trf-260-t-top-mount-refrigerator-grey-59568.html> (referer: https://www.daraz.com.bd/refrigerators/)
+2017-01-19 17:15:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/digital-x-1200va-supreme-ups-black-47918.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/digital-x-4083-81974-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 58, 877018),
+ 'price': u'4674',
+ 'title': u'Digital X 1200VA Supreme UPS - Black',
+ 'url': 'https://www.daraz.com.bd/digital-x-1200va-supreme-ups-black-47918.html'}
+2017-01-19 17:15:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/beacon-power-pac-650va-standby-ups-system-grey-52403.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/beacon-3600-30425-1-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 58, 897505),
+ 'price': u'2999',
+ 'title': u'Beacon Power Pac 650VA Standby UPS System - Grey',
+ 'url': 'https://www.daraz.com.bd/beacon-power-pac-650va-standby-ups-system-grey-52403.html'}
+2017-01-19 17:15:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/linnex-trf-260-t-top-mount-refrigerator-grey-59568.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/linnex-0557-86595-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/linnex-0557-86595-2-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 59, 9983),
+ 'price': u'41000',
+ 'title': u'Linnex TRF-260 T Top Mount Refrigerator \u2013 Grey',
+ 'url': 'https://www.daraz.com.bd/linnex-trf-260-t-top-mount-refrigerator-grey-59568.html'}
+2017-01-19 17:15:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/digital-x-850va-sprinter-ups-black-47553.html> (referer: https://www.daraz.com.bd/generators-power-suppliers/)
+2017-01-19 17:15:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sako-svr-2000va-stabilizer-white-59670.html> (referer: https://www.daraz.com.bd/generators-power-suppliers/)
+2017-01-19 17:15:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/canca-abc-132n-top-mount-refrigerator-132l-pink-100369.html> (referer: https://www.daraz.com.bd/refrigerators/)
+2017-01-19 17:15:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/digital-x-850va-sprinter-ups-black-47553.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/digital-x-6854-35574-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/digital-x-6854-35574-2-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 59, 187454),
+ 'price': u'2989',
+ 'title': u'Digital X 850VA Sprinter UPS - Black',
+ 'url': 'https://www.daraz.com.bd/digital-x-850va-sprinter-ups-black-47553.html'}
+2017-01-19 17:15:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/sako-svr-2000va-stabilizer-white-59670.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/sako-4329-07695-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/sako-4329-07695-2-zoom.jpg',
+            u'https://static.daraz.com.bd/p/sako-4329-07695-3-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 59, 204242),
+ 'price': u'6000',
+ 'title': u'Sako SVR-2000VA Stabilizer - White',
+ 'url': 'https://www.daraz.com.bd/sako-svr-2000va-stabilizer-white-59670.html'}
+2017-01-19 17:15:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/canca-abc-132n-top-mount-refrigerator-132l-pink-100369.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/canca-9746-963001-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/canca-9746-963001-2-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 59, 221122),
+ 'price': u'23199',
+ 'title': u'Canca ABC-132N Top Mount Refrigerator 132L - Pink',
+ 'url': 'https://www.daraz.com.bd/canca-abc-132n-top-mount-refrigerator-132l-pink-100369.html'}
+2017-01-19 17:15:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sako-svr-5000va-stabilizer-white-59672.html> (referer: https://www.daraz.com.bd/generators-power-suppliers/)
+2017-01-19 17:15:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/digital-x-650va-green-ups-black-47551.html> (referer: https://www.daraz.com.bd/generators-power-suppliers/)
+2017-01-19 17:15:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/sako-svr-5000va-stabilizer-white-59672.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/sako-5647-27695-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/sako-5647-27695-2-zoom.jpg',
+            u'https://static.daraz.com.bd/p/sako-5647-27695-3-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 59, 492753),
+ 'price': u'11000',
+ 'title': u'Sako SVR-5000VA Stabilizer - White',
+ 'url': 'https://www.daraz.com.bd/sako-svr-5000va-stabilizer-white-59672.html'}
+2017-01-19 17:15:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/digital-x-650va-green-ups-black-47551.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/digital-x-6856-15574-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/digital-x-6856-15574-2-zoom.jpg',
+            u'https://static.daraz.com.bd/p/digital-x-6857-15574-3-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 59, 550810),
+ 'price': u'2446',
+ 'title': u'Digital X 650VA Green UPS - Black',
+ 'url': 'https://www.daraz.com.bd/digital-x-650va-green-ups-black-47551.html'}
+2017-01-19 17:15:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.daraz.com.bd/sako-svr-3000va-stabilizer-white-59671.html> (referer: https://www.daraz.com.bd/generators-power-suppliers/)
+2017-01-19 17:15:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.daraz.com.bd/sako-svr-3000va-stabilizer-white-59671.html>
+{'categories': [],
+ 'currency': u'BDT',
+ 'images': [u'https://static.daraz.com.bd/p/sako-5108-17695-1-zoom.jpg',
+            u'https://static.daraz.com.bd/p/sako-5108-17695-2-zoom.jpg',
+            u'https://static.daraz.com.bd/p/sako-5108-17695-3-zoom.jpg'],
+ 'last_updated': datetime.datetime(2017, 1, 19, 17, 15, 59, 921464),
+ 'price': u'8000',
+ 'title': u'Sako SVR-3000VA Stabilizer - White',
+ 'url': 'https://www.daraz.com.bd/sako-svr-3000va-stabilizer-white-59671.html'}
+2017-01-19 17:15:59 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 1924,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 1924,
+ 'downloader/request_bytes': 116510,
+ 'downloader/request_count': 197,
+ 'downloader/request_method_count/GET': 197,
+ 'downloader/response_bytes': 8830699,
+ 'downloader/response_count': 197,
+ 'downloader/response_status_count/200': 190,
+ 'downloader/response_status_count/301': 7,
+ 'dupefilter/filtered': 572,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2017, 1, 19, 11, 15, 59, 926967),
+ 'item_scraped_count': 39,
+ 'log_count/DEBUG': 238,
+ 'log_count/INFO': 8,
+ 'request_depth_max': 3,
+ 'response_received_count': 190,
+ 'scheduler/dequeued': 2120,
+ 'scheduler/dequeued/memory': 2120,
+ 'scheduler/enqueued': 2598,
+ 'scheduler/enqueued/memory': 2598,
+ 'start_time': datetime.datetime(2017, 1, 19, 11, 15, 34, 58164)}
+2017-01-19 17:15:59 [scrapy.core.engine] INFO: Spider closed (shutdown)

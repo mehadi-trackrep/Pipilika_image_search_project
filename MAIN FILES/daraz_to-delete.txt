@@ -1,0 +1,27 @@
+---------daraz.com
+
+home to categories:
+response.selector.xpath('//div[@class="categories"]/a[@class="category"]/@href').extract()
+category page1 TO next pages:
+response.selector.xpath('//li[@class="item"]/a[@title="Next"]/@href').extract()
+pagelist page to details page:
+response.selector.xpath('//div[@class="sku -gallery -validate-size "]/a[@class="link"]/@href').extract()
+
+
+---------bagdoom.com
+
+home to categories:
+response.selector.xpath('//li[@class="sub_category level2"]/a/@href').extract()
+category page1 TO next pages:
+response.selector.xpath('//li/a[@class="next i-next"]/@href').extract_first()
+pagelist page to details page:
+ response.selector.xpath('//h2[@class="product-name"]/a/@href').extract()
+
+ -------priyoshop.com
+ 
+home to categories:  (http://www.priyoshop.com + xpath)
+response.selector.xpath('//li[@class="sub_category level2"]/a/@href').extract()
+category page1 TO next pages:
+NO paging
+category page to details page:
+  response.xpath('//div[@class="product-item"] /div[@class="picture"]/a/@href').extract()

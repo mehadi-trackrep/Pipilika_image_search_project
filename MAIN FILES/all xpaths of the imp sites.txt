@@ -1,0 +1,253 @@
+				1. www.Priyoshop.com(OKK)
+home to categories:  (http://www.priyoshop.com + xpath)
+response.selector.xpath('//li[@class="sub_category level2"]/a/@href').extract()
+category page1 TO next pages:
+NO paging
+category page to details page: (http://www.priyoshop.com + xpath)
+  response.xpath('//div[@class="product-item"] /div[@class="picture"]/a/@href').extract()
+
+title: 
+response.selector.xpath('//div[@class="product-name"]/h1[@itemprop="name"]/ text()').extract()
+price: 
+response.selector.xpath('//span[@itemprop="price"]/text()').extract()
+product-code: 
+response.selector.xpath('//div[@class="sku"]/span/text()').extract()
+image:
+response.selector.xpath('//img[@itemprop="image"]/@src').extract()
+
+
+				2. daraz.com.bd(OKK)
+
+home to categories:
+response.selector.xpath('//div[@class="categories"]/a[@class="category"]/@href').extract()
+category page1 TO next pages:
+response.selector.xpath('//li[@class="item"]/a[@title="Next"]/@href').extract()
+pagelist page to details page:
+response.selector.xpath('//div[@class="sku -gallery -validate-size "]/a[@class="link"]/@href').extract()
+
+title:
+response.selector.xpath('//div[@class="details -validate-size"]/span/h1[@class="title"]/ text()').extract() 
+price:
+response.selector.xpath('//span[@dir="ltr"]/text()').extract()
+product-code:N/A 
+image:
+a = response.selector.xpath(u'//div[@class="product-preview"]/img/@data-zoom').extract()
+
+
+				3. https://www.bagdoom.com/(OKK)
+home to categories:
+response.selector.xpath('//li[@class="sub_category level2"]/a/@href').extract()
+category page1 TO next pages:
+response.selector.xpath('//li/a[@class="next i-next"]/@href').extract_first()
+pagelist page to details page:
+ response.selector.xpath('//h2[@class="product-name"]/a/@href').extract()
+
+ product-name:
+ response.selector.xpath('//div[@class="product-name"]/h1/ text()').extract()
+ price: at first we will run first query , if we dont get info then  
+response.selector.xpath('//span[@class="price"]/text()').extract_first() 
+//<span class="price"
+discount-price: (Tk. 1099)
+response.selector.xpath('//p [@class="special-price"]/span [@class="price"]/text()').extract_first() 
+//<p class="special-price"> <span class="price"
+product-code: 
+n/a
+image:
+response.selector.xpath('//img[@class="cloudzoom"]/@src').extract() 
+//class="cloudzoom"
+
+				4. https://ajkerdeal.com/en/ (OKK)
+                         (prob: onek english link .. gula automatically bangla te convert hoye jay )
+home to categories:
+response.selector.xpath('//span[@class="title-subcategory-span"]/a/@href').extract()
+category page1 TO next pages:
+N/A
+pagelist page to details page:
+response.selector.xpath('//div[@class="deal-image-container"]/a/@href').extract()
+
+
+product-name:
+ response.selector.xpath('//span [@id="DealTitleLabel"]/h1/ text()').extract()
+ price: frmat(499)  
+response.selector.xpath('//span[@id="ProductPriceLabel"]/text()').extract_first()
+//span id="ProductPriceLabel"
+product-code: 
+n/a
+image:
+response.selector.xpath('//img[@id="multizoom2"]/@src').extract() 
+//  <img id="multizoom2" src="
+
+
+				5. http://www.aarong.com/  (OKK)        (NO DISCOUNT when done)
+home to categories:
+response.selector.xpath('//ul[@class="desktop menu-level1"]//li/ul//li/a/@href').extract()
+category page1 TO next pages: 
+response.selector.xpath('//a[@class="aarongicon-page-right"]/@href').extract()[0]
+pagelist page to details page:
+response.selector.xpath('//a[@class="product-image"]/@href').extract()
+
+product-name:
+ response.selector.xpath('//div[@class="productHeadLeft" ]/h1[@class="hidden-phone"]/ text()').extract()
+ price: frmat(499)  
+response.selector.xpath('//span[@class="price"]/text()').extract_first()
+//class="price"
+product-code: 
+n/a
+image:
+response.selector.xpath('//a [@id="Zoomer3"]/img/@src').extract_first()
+// a id="Zoomer3" img
+
+
+				6. http://kartbd.com/ (OKK)
+home to categories: (http://kartbd.com + xpath)
+response.selector.xpath('//li[@class="has-child parent"]/a/@href').extract()
+category page1 TO next pages: (http://kartbd.com + xpath)
+response.selector.xpath('//li[@class="i-next"]/a/@href').extract_first()
+pagelist page to details page: (http://kartbd.com + xpath)
+response.selector.xpath('//div[@class="image-box"]/a/@href').extract()
+
+
+title: 
+response.selector.xpath('//div[@class="col-md-5 col-sm-6 product-info"]/h2[@class="title"]/text()').extract()
+price: 
+response.selector.xpath('//div[@class="col-xs-7"]/text()').extract()
+product-code: 
+response.selector.xpath('//div[@class="sku"]/span/text()').extract()
+image: (http://kartbd.com + xpath)
+response.selector.xpath('//a[@class="f-box"]/@href').extract()
+
+
+				7. https://easyshoppingbd.com/ (OKK)
+home to categories:
+response.selector.xpath('//div[@class="itemMenu level1"]/a/@href').extract()
+next page:
+N/A
+category to details:
+response.selector.xpath('//div[@class="products-inner"]/a/@href').extract()
+
+title:
+response.selector.xpath('//h1[@itemprop="name"]/ text()').extract()
+price(BDT): 
+response.selector.xpath('//span[@id="our_price_display"]/text()').extract()
+image:
+response.selector.xpath('//img[@id="bigpic" and @itemprop="image"]/@src').extract()
+	
+
+				8. https://kiksha.com (OKK)
+home to categories:
+response.selector.xpath('//ul[@class="level0"]/li[@class="level1 nav-6-1 parent item"]/a/@href').extract()
+next page:
+response.selector.xpath('//a[@class="button next i-next"]/@href').extract_first()
+category to details:
+response.selector.xpath('//div[@class="product-image"]/a/@href').extract()
+
+title:
+response.selector.xpath('//h1[@itemprop="name"]/ text()').extract()
+price(BDT): 
+response.selector.xpath('//p[@class="special-price"]//span[@class="price"]/text()').extract_first() ,
+response.selector.xpath('//span[@class="price"]/text()').extract_first()
+image:
+response.selector.xpath('//img[@id="image-main"]/@src').extract_first()
+
+
+				9. https://www.pickaboo.com (OKK)
+home to categories:
+response.selector.xpath('//li[@class="menu-item-text menu-item-depth-3  "]//h5/a/@href').extract()
+next page:
+response.selector.xpath('//a[@class="next i-next"]/@href').extract_first()
+category to details:
+response.selector.xpath('//h2[@class="product-name newname"]/a/@href').extract()
+
+title:
+response.selector.xpath('//h1[@class="product-productname"]/ text()').extract() OR,
+response.selector.xpath('//h1[@itemprop="name"]/ text()').extract()
+price(bangla toa): 
+response.selector.xpath('//p[@class="special-price"]//span[@class="price"]/text()').extract_first() ,
+response.selector.xpath('//span[@class="price"]/text()').extract_first()
+image:
+response.selector.xpath('//img[@id="magnify-small"]/@src').extract_first()
+
+
+
+				10. https://www.othoba.com/ (OKK)
+home to categories: (https://www.othoba.com + xpath)
+response.selector.xpath('//li[@class="lnkHeading"]/a/@href').extract()
+next page:
+N/A
+category to details: (https://www.othoba.com + xpath)
+response.selector.xpath('//div[@class="picture"]/a/@href').extract()
+
+title:
+response.selector.xpath('//h2/span[@itemprop="name"]/ text()').extract_first()
+price(Tk):  
+response.selector.xpath('//span[@itemprop="price"]/text()').extract_first()
+image:
+response.selector.xpath('//a[@itemprop="image"]/@href').extract_first()
+
+
+
+				11. https://www.nanarokom.com (OKK)
+home to categories:
+response.selector.xpath('//ul[@class="menu"]//li/a/@href').extract()
+next page:
+N/A
+category to details:
+response.selector.xpath('//h3[@class="product-name short"]/a/@href').extract()
+
+title:
+response.selector.xpath('//h1[@class="product_title entry-title"]/ text()').extract()
+itemcode:
+response.selector.xpath('//div[@itemprop="description"]/p/text()').extract_first()
+price(bangla toa):  
+response.selector.xpath('//p[@class="price"]/span[@class="woocommerce-Price-amount amount"]/text()').extract_first()
+image:
+response.selector.xpath('//a[@itemprop="image"]/@href').extract_first()
+
+
+
+				12. https://dam.com.bd/ (OKK)
+home to categories:
+response.selector.xpath('//ul[@class="dropdown-menu submenu-menu"]/li/a/@href').extract()
+next page:
+	(problem)
+category to details:
+response.selector.xpath('//td[@width="125"]/a/@href').extract()
+
+title:
+response.selector.xpath('//h2[@itemprop="name"]/ text()').extract_first()
+price(Tk):  
+response.selector.xpath('//span[@itemprop="lowPrice"]/text()').extract_first()
+image:
+response.selector.xpath('//img[@itemprop="image"]/@src').extract_first()
+
+
+				13. http://www.bdhaat.com (OK)
+title:
+response.selector.xpath('//div[@class="product-name"]/h1/text()').extract_first()
+price(Tk):  
+response.selector.xpath('//span[@class="price"]/text()').extract_first(
+image:
+response.selector.xpath('//a[@id="zoom1"]/@href').extract_first()
+
+
+				14. http://www.shoppersbd.com/
+title:
+response.selector.xpath('//div[@class="product-name"]/h1/text()').extract_first()
+product-code: 
+response.selector.xpath('//p[@class="sku"]/text()').extract()
+price(Tk):  
+response.selector.xpath('//span[@class="price"]/text()').extract_first(
+image:
+response.selector.xpath('//a[@id="zoom1"]/@href').extract_first()
+
+==============================================================================================================
+==============================================================================================================
+
+
+
+				15. Rokomari.com (bangla text kemne nibo? :( ) 
+title:
+price:
+response.selector.xpath('//span[@class="mainPrice"]/text()').extract()
+
+

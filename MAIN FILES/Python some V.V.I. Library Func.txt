@@ -1,0 +1,36 @@
+s="12 23,445.60"
+
+s=s.replace(',','')
+
+s=s.replace(' ','')
+
+print s
+num=float(s)
+
+print num
+print "Hello World!\n"
+
+
+OR,
+
+
+chars_to_remove  = '.!'
+
+
+subj = 'A.B!C?'
+
+print subj.translate(None, ''.join(chars_to_remove))
+
+=================>(NON-ENGLISH CHAR correctly display)
+#!/usr/bin/env python
+
+# -*- coding: utf-8 -*-
+
+
+s1 = u'\u09ae\u09b9\u09be\u0995\u09be\u09b6 \u09ac\u09bf\u099c\u09cd\u099e\u09be\u09a8 \u0993 \u099c\u09cd\u09af\u09cb\u09a4\u09bf\u09b0\u09cd\u09ac\u09bf\u09a6\u09cd\u09af\u09be '
+
+s = u'\u09ac\u0987'
+
+a = s1.encode('utf-8')
+
+print a
